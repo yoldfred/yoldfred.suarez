@@ -74,6 +74,15 @@ nav.navActive .mainBTN:hover {
     height: 100%;
     /* background-color: #f00; */
 }
+.mainBTN i::before{
+    width: 60px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: " ";
+    z-index: 1;
+}
 
 nav.navActive {
     background-color: #f0ffffd6;
@@ -193,10 +202,16 @@ article.esp picture img {
     object-fit: cover;
 }
 article.esp  p {
+    width: 100%;
+    min-height: 256px;
+    /* height: 320px; */
     padding:2rem;
     letter-spacing: 1px;
     line-height: 2rem;
     font-size: 1.1rem;
+}
+article.esp  p span{
+    flex-grow: 1;
 }
 
 .titulos{
@@ -206,7 +221,11 @@ article.esp  p {
     font-size: 3rem;
     text-transform: capitalize;
     border-bottom:solid 1px #0002
-
+    
+}
+.tespecialidades{
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 section.tecnologias{
@@ -332,7 +351,9 @@ article div b {
     opacity: 1;
     
 }
-
+.barrasActivas{
+    color: #333;
+}
 footer {
     border-top: solid 1px #0002;
     padding: 3rem;

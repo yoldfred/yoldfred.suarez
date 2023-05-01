@@ -1,6 +1,8 @@
 let mainNav = document.querySelector(".mainNav");
 let buttom = document.querySelector(".btn");
 let cambioColor = document.querySelector("#cambioColor");
+let botonCambiaColor =document.getElementById("#botonCambiaColor");
+let window =document.querySelector("html");
 
 window.addEventListener("scroll", (e) => {
   let scroll = Math.floor(window.scrollY);
@@ -18,4 +20,8 @@ window.addEventListener("scroll", (e) => {
 
     cambioColor.classList.remove("color-show");
   }
+});
+
+botonCambiaColor.addEventListener("click",()=>{
+  alert("est funciona")
 });
